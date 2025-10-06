@@ -62,9 +62,10 @@ goal_state = ('W', 'W', 'W', '_', 'E', 'E', 'E')
 solution_path = solve_with_bfs(initial_state, goal_state)
 
 if solution_path:
-    print("✅ Optimal solution found! The sequence of steps is:\n")
+    print("Optimal solution found! The sequence of steps is:\n")
     for i, state in enumerate(solution_path):
         print(f"Step {i:2d}: {' '.join(state)}")
     print(f"\nThis solution is optimal and requires {len(solution_path) - 1} steps.")
 else:
+
     print("No solution was found.")
